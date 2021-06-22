@@ -3,6 +3,15 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 479px) {
+  .social-list {
+    justify-content: center;
+  }
+  .social-list__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
 .social-list__link {
   display: flex;
   justify-content: center;

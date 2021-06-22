@@ -2,52 +2,57 @@
   background-color: var(--accent-background-color);
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .team__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-  justify-content: space-between;
-}
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    justify-content: space-between;
+  }
 }
 
-// .team__photo{
-//   width: 450px;
-//   height: 460px;
-// }
-
-// @media screen and (min-width: 768px){
-//   .team__photo{
-//   width: 354px;
-//   height: 374px;
-// }
-// }
-
-// @media screen and (min-width: 1200px){
-  .team__photo{
-  width: 270px;
-  height: 260px;
+.team__photo {
+  max-width: 100%;
 }
-// }
+
+@media screen and (min-width: 768px) {
+  .team__photo {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__photo {
+    width: 270px;
+    height: 260px;
+  }
+}
 
 .team__content {
-  padding: 30px 122px 24px 122px;
+  padding: 30px 0 24px 0;
   background-color: var(--dark-background-text-color);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
-@media screen and (min-width: 768px){
-  .team__content{
-    padding: 30px 74px 24px 74px;
-  }  
+@media screen and (min-width: 480px) {
+  .team__content {
+    padding: 30px 122px 24px 122px;
+  }
 }
 
-@media screen and (min-width: 1200px){
-  .team__content{
+@media screen and (min-width: 768px) {
+  .team__content {
+    padding: 30px 74px 24px 74px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__content {
     padding: 30px 32px;
-  }  
+  }
 }
 
 .team__member {
@@ -58,20 +63,26 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (min-width: 768px){
-  .team__member {
-  flex-basis: calc((100% - 60px) / 2);
-  margin-left: 30px;
-  margin-top: 30px;
-}
+@media screen and (max-width: 767px) {
+  .team__member:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 768px) {
   .team__member {
-  flex-basis: calc((100% - 120px) / 4);
-  margin-left: 30px;
-  margin-top: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
+
+@media screen and (min-width: 1200px) {
+  .team__member {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .team__member-name {
