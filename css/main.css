@@ -708,7 +708,6 @@ body.modal-open {
 @media screen and (max-width: 479px) {
   .modal-window {
     max-width: 450px;
-    max-height: 609px;
   }
 }
 
@@ -999,14 +998,19 @@ body.modal-open {
 
 .hero__title {
   margin: 0 auto 30px;
-  max-width: 360px;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
-  letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: var(--dark-background-text-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    max-width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
