@@ -43,7 +43,20 @@
 }
 
 .footer__social-wrapper {
-  margin-right: 93px;
+  text-align: center;
+
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-right: 93px;
+    }
+  }
+
+  .social-list {
+    width: 206px;
+    margin: 0 auto;
+  }
 }
 
 .social-list__item_footer {

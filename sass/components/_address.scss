@@ -3,7 +3,19 @@
 }
 
 .footer__address {
-  margin-right: 70px;
+  margin: 0 auto 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    margin-right: 70px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .address__list {
+    text-align: center;
+  }
 }
 
 .address__list-item {
