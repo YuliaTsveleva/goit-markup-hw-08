@@ -22,10 +22,15 @@
 
 .modal-form__field {
   margin-bottom: 10px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(400, 12px, 14px, 0.01em);
+  // font-size: 12px;
+  // line-height: 1.17;
+  // letter-spacing: 0.01em;
   color: var(--main-text-color);
+
+  &:focus-within {
+    color: var(--accent-color);
+  }
 }
 
 .modal-form__input {
@@ -81,14 +86,21 @@
 }
 
 .modal-form__agreement {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 24px);
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
   color: var(--main-text-color);
   margin-bottom: 30px;
 
+  @media screen and (max-width: 1199px) {
+    & {
+      @include font(400, 12px, 14px);
+    }
+  }
+
   &::before {
-    content: "";
+    content: '';
     display: inline-block;
     vertical-align: middle;
     margin-right: 8px;
@@ -103,7 +115,7 @@
       background-color: var(--accent-color);
       border: none;
       fill: var(--dark-background-text-color);
-      background-image: url("../images/icon-check.svg");
+      background-image: url('../images/icon-check.svg');
     }
 
     .modal-form__checkbox:focus + &,
