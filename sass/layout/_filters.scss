@@ -4,6 +4,15 @@
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .container__filters {
+    flex-wrap: wrap;
+    justify-content: left;
+    height: 91px;
+    align-content: space-between;
+  }
+}
+
 .filters__item {
   &:not(:last-child) {
     margin-right: 8px;

@@ -22,8 +22,16 @@
   }
 }
 
-.header__logo-link {
-  margin-right: 95px;
+@media screen and (min-width: 768px) {
+  .header__logo-link {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo-link {
+    margin-right: 95px;
+  }
 }
 
 .footer__logo-link {
