@@ -9,7 +9,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform var(--transition-duration) var(--timing-cubic);
   padding: 40px;
-  width: 100%;
+  width: 90%;
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(1.3);
