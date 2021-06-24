@@ -8,7 +8,6 @@
   .container__filters {
     flex-wrap: wrap;
     justify-content: left;
-    height: 91px;
     align-content: space-between;
   }
 }
@@ -33,6 +32,7 @@
   transition: color var(--transition-duration) var(--timing-cubic),
     background-color var(--transition-duration) var(--timing-cubic),
     box-shadow var(--transition-duration) var(--timing-cubic);
+  margin-bottom: 15px;
 
   &:hover,
   &:focus {

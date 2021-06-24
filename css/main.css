@@ -1338,7 +1338,6 @@ body.modal-open {
   .container__filters {
     flex-wrap: wrap;
     justify-content: left;
-    height: 91px;
     align-content: space-between;
   }
 }
@@ -1359,6 +1358,7 @@ body.modal-open {
   background-color: var(--accent-background-color);
   cursor: pointer;
   transition: color var(--transition-duration) var(--timing-cubic), background-color var(--transition-duration) var(--timing-cubic), box-shadow var(--transition-duration) var(--timing-cubic);
+  margin-bottom: 15px;
 }
 
 .filters__button:hover, .filters__button:focus {
