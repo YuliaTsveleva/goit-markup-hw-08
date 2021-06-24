@@ -10,8 +10,8 @@
 .portfolio__caption {
   padding: 20px 24px;
   // border-bottom: 1px solid var(--accent-background-color);
-  border-left: 1px solid var(--accent-background-color);
-  border-right: 1px solid var(--accent-background-color);
+  // border-left: 1px solid var(--accent-background-color);
+  // border-right: 1px solid var(--accent-background-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -39,6 +39,8 @@
 .portfolio__link {
   transition: box-shadow var(--transition-duration) var(--timing-cubic);
   border-bottom: 1px solid var(--accent-background-color);
+  border-left: 1px solid var(--accent-background-color);
+  border-right: 1px solid var(--accent-background-color);
 
   &:hover,
   &:focus {
