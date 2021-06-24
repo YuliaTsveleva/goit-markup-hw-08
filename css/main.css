@@ -752,7 +752,7 @@ body.modal-open {
 
 @media screen and (max-width: 479px) {
   .modal-window {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
