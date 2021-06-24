@@ -645,7 +645,7 @@ body.modal-open {
 
 @media screen and (max-width: 480px) {
   .subscription-form__input {
-    width: 250px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -752,7 +752,7 @@ body.modal-open {
 
 @media screen and (max-width: 479px) {
   .modal-window {
-    max-width: 450px;
+    max-width: 100%;
   }
 }
 
